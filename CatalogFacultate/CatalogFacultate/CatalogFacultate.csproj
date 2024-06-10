@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A325FFF2-68F8-4A51-9899-9E3DD848809B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>CatalogFacultate</RootNamespace>
+    <AssemblyName>CatalogFacultate</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\GestionareAniForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\GestionareAniForm.Designer.cs">
+      <DependentUpon>GestionareAniForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\GestionareCadreForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\GestionareCadreForm.Designer.cs">
+      <DependentUpon>GestionareCadreForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\GestionareCicluriForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\GestionareCicluriForm.Designer.cs">
+      <DependentUpon>GestionareCicluriForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\GestionareDisciplineForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\GestionareDisciplineForm.Designer.cs">
+      <DependentUpon>GestionareDisciplineForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\GestionareGrupeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\GestionareGrupeForm.Designer.cs">
+      <DependentUpon>GestionareGrupeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\GestionareNoteForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\GestionareNoteForm.Designer.cs">
+      <DependentUpon>GestionareNoteForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\GestionareProgrameForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\GestionareProgrameForm.Designer.cs">
+      <DependentUpon>GestionareProgrameForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\GestionareStudentiForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\GestionareStudentiForm.Designer.cs">
+      <DependentUpon>GestionareStudentiForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\VizualizareCatalogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\VizualizareCatalogForm.Designer.cs">
+      <DependentUpon>VizualizareCatalogForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AnStudiu.cs" />
+    <Compile Include="Models\CadruDidactic.cs" />
+    <Compile Include="Models\CicluriInvatamant.cs" />
+    <Compile Include="Models\Disciplina.cs" />
+    <Compile Include="Models\Grupa.cs" />
+    <Compile Include="Models\Note.cs" />
+    <Compile Include="Models\ProgramStudii.cs" />
+    <Compile Include="Models\Student.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\GestionareAniForm.resx">
+      <DependentUpon>GestionareAniForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\GestionareCadreForm.resx">
+      <DependentUpon>GestionareCadreForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\GestionareCicluriForm.resx">
+      <DependentUpon>GestionareCicluriForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\GestionareDisciplineForm.resx">
+      <DependentUpon>GestionareDisciplineForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\GestionareGrupeForm.resx">
+      <DependentUpon>GestionareGrupeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\GestionareProgrameForm.resx">
+      <DependentUpon>GestionareProgrameForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\GestionareStudentiForm.resx">
+      <DependentUpon>GestionareStudentiForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\VizualizareCatalogForm.resx">
+      <DependentUpon>VizualizareCatalogForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

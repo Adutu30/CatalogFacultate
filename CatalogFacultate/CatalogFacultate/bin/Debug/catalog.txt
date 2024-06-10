@@ -1,0 +1,2 @@
+NumarMatricol|Nume|Prenume|Disciplina|Nota|Media|Stare
+1|Ionescu|Mihai|Necunoscut|4|4.00|restantier
